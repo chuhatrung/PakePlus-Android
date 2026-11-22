@@ -5,6 +5,7 @@ on:
     # push:
     #     branches:
     #         - 'main'
+    #         - 'master'
 
 permissions:
     contents: write
@@ -46,6 +47,13 @@ jobs:
                   sudo apt-get update
                   sudo apt-get install imagemagick
                   convert --version
+
+            - name: Generate signing keystore
+              run: |
+                  if [ ! -f pakeplus.txt ]; then
+                    keytool -genkeypair -v -keystore pakeplus.keystore -alias pakeplus -keyalg RSA -keysize 2048 -validity 10000 -storepass 1024xiaoshen -keypass 1024xiaoshen -dname "CN=PakePlus, OU=PakePlus, O=PakePlus, L=Unknown, ST=Unknown, C=CN"
+                    cp pakeplus.keystore pakeplus.txt
+                  fi
 
             - name: Init Project Config
               run: |
