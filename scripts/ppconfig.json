@@ -6,7 +6,7 @@
     "icon": "./icon-512.png",
     "tauriApi": false,
     "debug": false,
-    "version": "0.0.2",
+    "version": "0.0.3",
     "preview": "phone",
     "platform": ["1-1", "2-1", "2-2"],
     "width": 800,
@@ -236,7 +236,7 @@
     "ios": {
         "name": "fbcfdcbaaca",
         "showName": "Tồn Điểm Bán",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "webUrl": "https://wundertute.github.io/trolynhi/ton-lau-no-sale-tttm.html",
         "id": "com.fbcfdcbaaca.pakeplus.ios",
         "icon": "./app-icon.png",
@@ -249,7 +249,7 @@
     "android": {
         "name": "fbcfdcbaaca",
         "showName": "Tồn Điểm Bán",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "webUrl": "https://wundertute.github.io/trolynhi/ton-lau-no-sale-tttm.html",
         "id": "com.fbcfdcbaaca.pakeplus.android",
         "icon": "./icon-512.png",
